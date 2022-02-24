@@ -480,7 +480,7 @@ def main():
     CONFIG.update(args.config)
     connection = open_connection(args.config)
     db_schema = args.config.get('schema') or 'public'
-    LOGGER.info("dict : %",args.config)
+    LOGGER.info("dict : %s",args.config)
     if args.discover:
         do_discover(connection, db_schema)
     elif args.catalog:
