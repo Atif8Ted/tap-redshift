@@ -68,7 +68,7 @@ def get_selected_properties(catalog_entry):
 
 def resolve_catalog(discovered, catalog, state):
     streams = list(filter(entry_is_selected, catalog.streams))
-    LOGGER.info("Selected : %",entry_is_selected)
+    LOGGER.info("Selected : %s",streams)
     LOGGER.info("###################")
 
     currently_syncing = singer.get_currently_syncing(state)
